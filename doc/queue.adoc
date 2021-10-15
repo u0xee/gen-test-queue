@@ -1,0 +1,11 @@
+= Queue: A First-In-First-out (FIFO) data structure
+
+A queue is a First-In First-Out (FIFO) data structure, commonly used in
+situations where you want to process items in the order they are created
+or queued. One common model of usage for a queue is to have one thread
+adding work to the queue, and another processing work from the queue.
+The following image shows a conceptual image of a queue. The front of
+the queue is where items are removed, and the rear of the queue is where
+items are added.
+
+image::imagesdir/QueueImage.jpg[Queue, caption=https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm, align=center, width=500]
