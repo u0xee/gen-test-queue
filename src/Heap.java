@@ -14,8 +14,8 @@ import java.util.stream.Collectors;
  */
 public class Heap<E extends Comparable<? super E>> implements IPriorityQueue<E> {
     public static void main(String[] args) {
+	/*
         Heap<Integer> q = new Heap<>();
-
         q.add(9);
         q.add(1);
         q.add(5);
@@ -25,38 +25,29 @@ public class Heap<E extends Comparable<? super E>> implements IPriorityQueue<E> 
         q.debugHeap();
         q.add(0);
         q.add(8);
-
-        q.debugHeap();
-
-        System.out.println(q.remove());
         q.debugHeap();
         System.out.println(q.remove());
         q.debugHeap();
         System.out.println(q.remove());
-
         q.debugHeap();
-
+        System.out.println(q.remove());
+        q.debugHeap();
         q.add(4);
         q.debugHeap();
         q.add(2);
         q.debugHeap();
         q.add(4);
         q.debugHeap();
+	*/
 
         // final testing uncomment the following line to get comprehensive testing
         final int hundred_thousand = 100000;
         final int million = 1000000;
-        QueueTestProgram.queue_max_size = 10;
+        QueueTestProgram.queue_max_size = 100;
 
-        QueueTestProgram.printFailedTests(hundred_thousand,
+        QueueTestProgram.printFailedTests(million,
                                           PriorityQueue::new,
                                           (x) -> new Heap<>());
-
-        // Once finished with the initial comprehensive test, try out these additional testing measures.
-        // If this works for you, move on to the big leagues:
-        // 1. set QueueTestProgram.queue_max_size to 100.
-        // 2. change the hundred_thousand above to a million
-        // 3. cross your fingers and run it again!
     }
 
     /**
